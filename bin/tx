@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Check if the script is run with an argument
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 [on|off]"
+    exit 1
+fi
+
+# Check the argument and start or stop Tor accordingly
+if [ "$1" == "on" ]; then
+    sudo systemctl start tor
+    echo "Tor has been started."
+elif [ "$1" == "off" ]; then
+    sudo systemctl stop tor
+    echo "Tor has been stopped."
+else
+    echo "Invalid argument. Usage: $0 [on|off]"
+    exit 1
+fi
+
+exit 0

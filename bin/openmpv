@@ -1,0 +1,17 @@
+#!/bin/bash
+
+clipboard=$(wl-paste)
+
+# Check if mpv is installed
+if ! command -v mpv &> /dev/null; then
+    echo "Error: mpv is not installed. Please install mpv."
+    exit 1
+fi
+
+# Check if clipboard content is a valid URL
+if [[ $clipboard =~ ^http(s)?:// ]]; then
+    mpv "$clipboard"
+else
+    echo "Error: Clipboard does not contain a valid URL."
+    exit 1
+fi

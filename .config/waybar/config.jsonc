@@ -13,6 +13,7 @@
     "tray",
     "network",
     "temperature",
+    "disk",
     "memory",
     "backlight",
     "pulseaudio",
@@ -34,14 +35,14 @@
   //   },
   //   "return-type": "json",
   //   "exec-if": "which swaync-client",
-  //   "exec": "sleep 0.1 && swaync-client -swb",
-  //   "on-click": "sleep 0.1 && swaync-client -t -sw",
-  //   "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+  //   "exec": "sleep 0.2 && swaync-client -swb",
+  //   "on-click": "sleep 0.2 && swaync-client -t -sw",
+  //   "on-click-right": "sleep 0.2 && swaync-client -d -sw",
   //   "escape": true
   // },
   "custom/launcher": {
     "format": "󰣇",
-    "on-click": "sleep 0.1 && /home/ax/.config/rofi/launchers/type-3/launcher.sh "
+    "on-click": "sleep 0.2 && /home/ax/.config/rofi/launchers/type-3/launcher.sh "
   },
   "hyprland/workspaces": {
     "all-outputs": true,
@@ -74,7 +75,7 @@
     "format": "💽 {used}",
     "path": "/home",
     "tooltip": true,
-    "on-click": "sleep 0.1 && kitty ncdu",
+    "on-click": "sleep 0.2 && kitty ncdu",
     "tooltip-format": "{used}/{total} => {path} {percentage_used}%"
   },
   "pulseaudio": {
@@ -84,7 +85,7 @@
     "format-icons": {
       "default": ["", "", "󰕾"]
     },
-    "on-click": "sleep 0.1 && pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click": "sleep 0.2 && pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "tooltip": false
   },
   "battery": {
@@ -116,7 +117,7 @@
     }
   },
   "memory": {
-    "on-click": "sleep 0.1 && kitty btm",
+    "on-click": "sleep 0.2 && kitty btm",
     "interval": 1,
     "format": "💻 {used}",
     "states": {
@@ -133,7 +134,7 @@
     "format-ethernet": "󰈀  {ifname} ({ipaddr})",
     "format-linked": "📵 {essid} (No IP)",
     "format-disconnected": "󰖪 Disconnected",
-    "on-click": "sleep 0.1 && iwgtk",
+    "on-click": "sleep 0.2 && iwgtk",
     "tooltip": true
   },
   "temperature": {
@@ -143,17 +144,17 @@
   },
   "custom/powermenu": {
     "format": "",
-    "on-click": "sleep 0.1 && /home/ax/.config/rofi/powermenu/type-1/powermenu.sh",
+    "on-click": "sleep 0.2 && /home/ax/.config/rofi/powermenu/type-1/powermenu.sh",
     "tooltip": false
   },
   "custom/clip": {
     "format": "📋",
-    "on-click": "sleep 0.1 && nwg-clipman",
+    "on-click": "sleep 0.2 && nwg-clipman",
     "tooltip": false
   },
   "custom/openmpv": {
     "format": "▶️",
-    "on-click": "sleep 0.1 && /home/ax/bin/openmpv",
+    "on-click": "sleep 0.2 && /home/ax/bin/openmpv",
     "tooltip": false
   },
   "tray": {
