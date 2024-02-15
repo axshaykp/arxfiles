@@ -10,6 +10,7 @@ A git repository to manage all my dotfiles.
 1. [Hyprland](https://hyprland.org/)
 2. [Waybar](https://github.com/Alexays/Waybar)
 3. [rofi](https://davatorium.github.io/rofi/)
+4. [swaync](https://github.com/ErikReider/SwayNotificationCenter)
 
 ### LINKS
 
