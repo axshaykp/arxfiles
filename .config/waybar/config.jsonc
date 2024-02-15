@@ -9,7 +9,9 @@
   "modules-center": ["clock"],
   "modules-right": [
     "custom/clip",
-    "custom/openmpv",
+    "custom/previous",
+    "custom/play-pause",
+    "custom/next",
     "tray",
     "network",
     "temperature",
@@ -20,26 +22,6 @@
     "battery",
     "custom/powermenu"
   ],
-  // "custom/notification": {
-  //   "tooltip": false,
-  //   "format": "{icon}",
-  //   "format-icons": {
-  //     "notification": "󰂚<span foreground='#F7768E'><sup></sup></span>",
-  //     "none": "󰂚",
-  //     "dnd-notification": "󰂛<span foreground='#F7768E'><sup></sup></span>",
-  //     "dnd-none": "󰂛",
-  //     "inhibited-notification": "󰂚<span foreground='#F7768E'><sup></sup></span>",
-  //     "inhibited-none": "󰂚",
-  //     "dnd-inhibited-notification": "󰂛<span foreground='#F7768E'><sup></sup></span>",
-  //     "dnd-inhibited-none": "󰂛"
-  //   },
-  //   "return-type": "json",
-  //   "exec-if": "which swaync-client",
-  //   "exec": "sleep 0.2 && swaync-client -swb",
-  //   "on-click": "sleep 0.2 && swaync-client -t -sw",
-  //   "on-click-right": "sleep 0.2 && swaync-client -d -sw",
-  //   "escape": true
-  // },
   "custom/launcher": {
     "format": "󰣇",
     "on-click": "sleep 0.2 && /home/ax/.config/rofi/launchers/type-3/launcher.sh "
@@ -155,6 +137,21 @@
   "custom/openmpv": {
     "format": "▶️",
     "on-click": "sleep 0.2 && /home/ax/bin/openmpv",
+    "tooltip": false
+  },
+  "custom/play-pause": {
+    "format": "⏯️",
+    "on-click": "~/bin/music_controls.sh play-pause",
+    "tooltip": false
+  },
+  "custom/next": {
+    "format": "⏭️",
+    "on-click": "~/bin/music_controls.sh next",
+    "tooltip": false
+  },
+  "custom/previous": {
+    "format": "⏮️",
+    "on-click": "~/bin/music_controls.sh previous",
     "tooltip": false
   },
   "tray": {

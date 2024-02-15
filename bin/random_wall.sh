@@ -2,6 +2,8 @@
 
 wallpaper_folder=~/Pictures/Wallpapers
 
+swww img "$wallpaper_folder/despicable-me.jpg" --transition-fps 120 --transition-type any --transition-duration 3
+
 while true; do
     wallpaper_location="$(ls "$wallpaper_folder" | shuf -n 1)"
     
