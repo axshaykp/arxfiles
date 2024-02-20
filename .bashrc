@@ -141,3 +141,7 @@ source "$OSH"/oh-my-bash.sh
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
 alias arx='/usr/bin/git --git-dir="$HOME/.arxfiles/" --work-tree="$HOME"'
+
+##zoxide
+
+eval "$(zoxide init --cmd cd bash)"
